@@ -53,11 +53,12 @@ public class CoffeeShop {
            table.takeOrders(breakfasts);
            if (salad != null)
                table.addSalad(salad);
+           this.profit += table.calculatePrice();
        }
+
     }
-    public void calculateProfit(){
-        for(Table table : this.tables)
-            this.profit += table.calculatePrice();
+    public int getProfit(){
+        return this.profit;
     }
 
 

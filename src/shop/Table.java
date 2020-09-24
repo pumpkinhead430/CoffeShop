@@ -48,8 +48,9 @@ public class Table {
     }
 
     public int getId() {
-        return id;
+        return this.id;
     }
+    public int getPeople() { return this.atTable; }
     public boolean isItTable(int id){
         return  this.id == id;
     }
