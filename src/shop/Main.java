@@ -24,6 +24,11 @@ public class Main {
 
         System.out.println(coffeeShop.getProfit());
 
+        CoffeeShop cafeOfDoom = new CoffeeShop();
+
+        System.out.print(  cafeOfDoom.assignToTable(9));
+
+
     }
      public static Breakfast getBreakfast(Scanner sc){
          MainDish dish = getDish(sc);
