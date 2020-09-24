@@ -28,8 +28,8 @@ public class Breakfast {
 
     public int CalculatePrice(boolean salad) {
         if (salad)
-            return dish.getPRICE() - 2 + drink.getPrice() - 1;
+            return dish.getPRICE() - 2 + drink.getPrice(true) - 1;
 
-        return dish.getPRICE() + drink.getPrice();
+        return dish.getPRICE() + drink.getPrice(false);
     }
 }

@@ -24,11 +24,6 @@ public class Main {
 
         System.out.println(coffeeShop.getProfit());
 
-        CoffeeShop cafeOfDoom = new CoffeeShop();
-
-        System.out.print(  cafeOfDoom.assignToTable(9));
-
-
     }
      public static Breakfast getBreakfast(Scanner sc){
          MainDish dish = getDish(sc);
@@ -53,7 +48,7 @@ public class Main {
     public static Salad getSalad(Scanner sc, int people){
         System.out.println("do you want a salad?");
         if(sc.nextBoolean())
-            return new Salad(people);
+            return new Salad( new Tomato("red", 30), new Lettuce(Lettuce.Type.Arab), people);
         return null;
     }
 }

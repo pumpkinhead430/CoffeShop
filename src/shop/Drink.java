@@ -39,13 +39,16 @@ public class Drink {
         this.name = name;
     }
 
-    public int getPrice() {
-
-        return switch (this.size) {
-            case Small -> 5;
-            case Medium -> 7;
-            default -> 10;
+    public int getPrice(boolean salad) {
+        int price;
+         switch (this.size) {
+            case Small -> price = 5;
+            case Medium -> price = 7;
+            default -> price = 10;
         };
+        if(salad)
+            price--;
+        return price;
 
     }
 

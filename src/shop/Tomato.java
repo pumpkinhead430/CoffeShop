@@ -4,12 +4,12 @@ public class Tomato {
 
     private static final int PRICE = 5;
     private String color;
-    private double wheight;
+    private double weight;
 
 
-    public Tomato(String color, double wheight) {
+    public Tomato(String color, double weight) {
         this.color = color;
-        this.wheight = wheight;
+        this.weight = weight;
     }
 
     public int getPRICE() {
@@ -20,7 +20,7 @@ public class Tomato {
         return color;
     }
 
-    public double getWheight() {
-        return wheight;
+    public double getWeight() {
+        return weight;
     }
 }
